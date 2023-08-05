@@ -16,7 +16,7 @@ public class ControlFlow {
             System.out.println(number);
         }
         if(number <= 10){
-            System.out.println("Number Less or Equal to Ten!");
+            System.out.println("Number Less or Equal To Ten!");
         }        
          
     }
