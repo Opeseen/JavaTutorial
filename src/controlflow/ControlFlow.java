@@ -15,9 +15,12 @@ public class ControlFlow {
         if(number > 10){
             System.out.println(number);
         }
-        if(number <= 10){
+        else if(number == 10){
             System.out.println("Number Less or Equal To Ten!");
-        }        
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
          
     }
     
