@@ -1,6 +1,6 @@
 public class Switch {
   public static void main(String[] args){
-    int y = 100;
+    int y = 3;
     switch (y) {
       case 1: case 6: case 10:
       System.out.println("Red");
