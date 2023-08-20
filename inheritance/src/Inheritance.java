@@ -13,9 +13,8 @@ public class Inheritance {
 
     a.Print();
     b.Print();
-    System.out.println(a);
-    for(int i = 0; i < list.length; i++){
-      list[i].Print();
-    }
+    // for(int i = 0; i < list.length; i++){
+    //   list[i].Print();
+    // }
   }
 }
