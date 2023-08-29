@@ -41,7 +41,7 @@ public class UpdateuserServlet extends HttpServlet {
 			int result = statement.executeUpdate("update user set password = '"+password+"' where email ='"+email+"'");
 			PrintWriter out = response.getWriter();
 			if (result > 0)out.print("<h1>PASSWORD UPDATED</h1>");
-			else out.print("<h1>ERROR UPDATING THE USER</h1>");	
+			else out.print("<h1>ERROR UPDATING THE USER PASSWORD</h1>");	
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
