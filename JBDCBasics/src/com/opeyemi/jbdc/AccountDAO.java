@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 public class AccountDAO {
 	public static void main(String[] args) {
-		try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/student","Horpeyemi","yomex5055");
+		try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/student","admin","adminuser");
 				Statement statement = connection.createStatement();
 				ResultSet rs = statement.executeQuery("select * from account");	
 				) {

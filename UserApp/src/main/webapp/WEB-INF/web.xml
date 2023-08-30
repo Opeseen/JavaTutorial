@@ -18,11 +18,11 @@
     </init-param>
     <init-param>
     	<param-name>dbPasswd</param-name>
-    	<param-value>yomex5055</param-value>
+    	<param-value>adminuser</param-value>
     </init-param>
     <init-param>
     	<param-name>dbUser</param-name>
-    	<param-value>Horpeyemi</param-value>
+    	<param-value>admin</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>
