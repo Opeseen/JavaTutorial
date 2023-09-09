@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>PreInitializationDemo</display-name>
+  <servlet>
+    <description></description>
+    <display-name>PreinitServlet</display-name>
+    <servlet-name>PreinitServlet</servlet-name>
+    <servlet-class>com.opeyemi.servlet.preinitdemo.PreinitServlet</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PreinitServlet</servlet-name>
+    <url-pattern>/PreinitServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
