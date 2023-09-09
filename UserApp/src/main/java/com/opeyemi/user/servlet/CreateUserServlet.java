@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -21,9 +21,10 @@ public class CreateUserServlet extends HttpServlet {
 	
 	public void init(ServletConfig config) {
 		try {
+			ServletContext context = config.getServletContext();
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connection = DriverManager.getConnection(config.getInitParameter("dbUrl"),
-					config.getInitParameter("dbUser"),config.getInitParameter("dbPasswd"));
+			connection = DriverManager.getConnection(context.getInitParameter("dbUrl"),
+					context.getInitParameter("dbUser"),context.getInitParameter("dbPasswd"));
 			
 		} catch (SQLException e) {
 			e.printStackTrace();

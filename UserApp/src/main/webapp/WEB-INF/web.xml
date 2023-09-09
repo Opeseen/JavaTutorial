@@ -9,21 +9,21 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <context-param>
+	 <param-name>dbUrl</param-name>
+	 <param-value>jdbc:mysql://localhost/student</param-value>
+  </context-param>
+  <context-param>
+	 <param-name>dbPasswd</param-name>
+	 <param-value>adminuser</param-value>
+  </context-param>
+  <context-param>
+	 <param-name>dbUser</param-name>
+	 <param-value>admin</param-value>
+  </context-param>
   <servlet>
     <servlet-name>CreateUserServlet</servlet-name>
     <servlet-class>com.opeyemi.user.servlet.CreateUserServlet</servlet-class>
-    <init-param>
-    	<param-name>dbUrl</param-name>
-    	<param-value>jdbc:mysql://localhost/student</param-value>
-    </init-param>
-    <init-param>
-    	<param-name>dbPasswd</param-name>
-    	<param-value>adminuser</param-value>
-    </init-param>
-    <init-param>
-    	<param-name>dbUser</param-name>
-    	<param-value>admin</param-value>
-    </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>CreateUserServlet</servlet-name>
