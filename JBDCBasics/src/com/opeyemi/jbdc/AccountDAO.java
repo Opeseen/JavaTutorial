@@ -12,7 +12,6 @@ public class AccountDAO {
 				Statement statement = connection.createStatement();
 				ResultSet rs = statement.executeQuery("select * from account");	
 				) {
-//			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/student","Horpeyemi","yomex5055");
 //			System.out.println(connection + " Is Now Available");
 //			Statement statement = connection.createStatement();
 //			int result = statement.executeUpdate("insert into account values(40,'Mike','Jordan',40000)");
