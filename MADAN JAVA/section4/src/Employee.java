@@ -4,7 +4,7 @@ public class Employee {
   String lastName;
   byte age;
   char gender;
-  static String employerName="Google";
+  static final String EMPLOYER_NAME="Google";
 
   public Employee(){
     this("Will", "Smith", (byte)55, 'M');

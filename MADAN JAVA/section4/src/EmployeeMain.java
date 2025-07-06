@@ -19,6 +19,6 @@ public class EmployeeMain {
     System.out.println(employee3.getAge());
     System.out.println(employee3.getGender());
 
-    System.out.println(Employee.employerName);
+    System.out.println(Employee.EMPLOYER_NAME);
   }
 }
