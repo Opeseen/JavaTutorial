@@ -6,6 +6,12 @@ public class Car {
   String color;
   int horsePower;
   static final byte NO_OF_WHEELS=4;
+  static byte noOfEngines;
+
+  static{
+    noOfEngines = 1;
+    System.out.println("Static blocking is being executed");
+  }
 
 //  instance initialization block
   {
