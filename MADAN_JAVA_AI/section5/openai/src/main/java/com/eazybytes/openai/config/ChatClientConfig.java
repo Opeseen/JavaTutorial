@@ -1,4 +1,4 @@
-package com.eazybytes.openai.controller.config;
+package com.eazybytes.openai.config;
 
 import com.eazybytes.openai.advisors.TokenUsageAuditAdvisor;
 import org.springframework.ai.chat.client.ChatClient;
