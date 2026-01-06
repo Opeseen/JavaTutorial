@@ -4,10 +4,19 @@ import com.eazybytes.marvel.base.Vehicle;
 
 public class Car extends Vehicle {
 
-  public int horsePower = 150;
-  public String color = "Black";
-  public String turningRadius = "6.23";
-  public boolean isAutomatic = true;
+  public int horsePower;
+  public String color;
+  public String turningRadius;
+  public boolean isAutomatic;
+
+  public Car(){
+    super("Water");
+    System.out.println("Inside Car default constructor");
+    horsePower = 150;
+    color = "Black";
+    isAutomatic = true;
+    turningRadius = "6.23";
+  }
 
   public static void start(){
     System.out.println("Car starting");
