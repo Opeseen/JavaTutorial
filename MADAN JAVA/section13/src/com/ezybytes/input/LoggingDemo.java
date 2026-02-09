@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class LoggingDemo {
-  private static Logger logger = Logger.getLogger(LoggingDemo.class.getName());
+  private static final Logger logger = Logger.getLogger(LoggingDemo.class.getName());
 
   public static void main(String[] args) {
     logger.setLevel(Level.SEVERE);
