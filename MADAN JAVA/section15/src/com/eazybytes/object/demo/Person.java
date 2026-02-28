@@ -8,9 +8,7 @@ public class Person implements Cloneable {
   private char gender;
   private int ssn;
 
-  public Person(){
-
-  }
+  public Person(){}
 
   public Person(String name, int age, char gender, int ssn) {
     this.name = name;
